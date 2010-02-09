@@ -1,4 +1,5 @@
 require 'rake'
+require 'rake/clean'
 require 'spec/rake/spectask'
 
 desc "Run all specs in spec directory"
