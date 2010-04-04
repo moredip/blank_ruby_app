@@ -2,14 +2,12 @@
 
 Ready for you to start working on!
 
-# Copying repo into a new project
-From the blank_ruby_app dir:
-
-   	NEW_APP_LOCATION=/new/project/location
-	mkdir $NEW_APP_LOCATION
-	git archive master | tar -x -C $NEW_APP_LOCATION
-	cd $NEW_APP_LOCATION
-	git init
+# Creating a new project using blank_ruby_app as a template:
+	NEW_APP_DIR=foo
+	curl -L http://github.com/moredip/blank_ruby_app/tarball/master | tar xzv
+	mv moredip-blank_ruby_app* $NEW_APP_DIR
+	cd $NEW_APP_DIR
+	git init 
 	git add .
 	git commit -m 'initial commit, based on blank_ruby_app template'
 
